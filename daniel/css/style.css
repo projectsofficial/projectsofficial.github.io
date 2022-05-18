@@ -1,0 +1,288 @@
+
+:root{
+    --primary-color: #00000073;
+    --light-gray:#45ccb8;
+    --text-color: #ff686b;
+    --roboto:"Roboto",sans-serif; 
+    --gugi:"Gugi", cursive;
+    --sofia: "Sofia", cursive;
+    --border:#2b303218;
+
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.brand{
+    padding: 0;
+    margin-bottom: 0;
+    min-height: 10vh;
+    border-bottom: 2px solid;
+}
+.slid{
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+ .slid span{
+    display: inline;
+     color: goldenrod;
+     font-weight: bolder;
+ }
+ span.A{
+     color: rgb(149, 3, 247) ;
+ }
+ .carousel-caption h5{
+     color: rgb(11, 206, 255);
+ }
+
+.bg-primary-color{
+    background-color: var(--primary-color)!important;
+}
+
+.text-color{
+    color: var(--text-color);
+}
+.font-roboto{
+    font-family:  var(--roboto) ;
+}
+
+.lightblue{
+    color: lightblue;
+}
+
+
+a{
+    color: white;
+   
+}
+ul{
+    display: block;
+    padding: 0;
+}
+ul li{padding-left: 5px;
+    list-style-type: none;
+    margin: 0;
+    
+}
+a:hover{
+   
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+}
+
+header{
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+}
+
+header .site-title{
+    font-family: var(--gugi);
+}
+
+.container .dropdown-toggle,
+.container .dropdown-item{
+    font-size: 0.7em;
+}
+ .boss{
+     background-color: rgb(255, 255, 255);
+ }
+
+
+.logo img{
+    width: 3em;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+span{
+    display: flex;
+}
+.flogo img{
+width: 50px;
+min-height: 4vh;
+}
+.flogo h3 span{
+    padding-left: 5px;
+}
+.flogo>img > span{
+    display:inline;
+}
+
+
+.header-links a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+}
+.none{
+ border-color: white;
+background-color: transparent;
+}
+
+.navbar-nav{
+    padding: 0.8em 0em;
+}
+.navbar-nav .navbar-link{
+    font-size: 0.9em;
+    color: var(--light-gray)!important;
+}
+.navbar-nav .navbar-item .navbar-link{
+    padding: 0 1.3em;
+}
+
+.navbar-nav .basket-icon{
+    margin-right: 2rem !important;
+}
+img{
+    max-height:  70vh !important;
+    max-width: 100%;
+}
+span .flow img{
+    display: flex;
+}
+
+.intro{
+    color: rgb(149, 3, 247);
+    
+}
+
+.intro span{
+    display: inline;
+    color: goldenrod;
+}
+
+
+.product-card{
+border: none;
+text-align: center;
+position: relative;
+height: 30rem;
+}
+.product-card .card-title{
+    font-weight: 600;
+    font-size: 22px;
+}
+.product-card .card-text{
+    font-size: 14px;
+}
+.product-card .card-body{
+    height: 30px;
+}
+.product-card img{
+    height: 20rem;
+}
+.product-card::before{
+    content:"\f213";
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: deeppink;
+    font-size: 20px;
+    padding-right: 10px;
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+
+
+section.showcase{
+background-image:linear-gradient(220deg, lightgrey 50%, rgba(128, 128, 128, 0.616) 50%);
+}
+
+.footer{
+    background-image:linear-gradient(220deg, rgb(0, 132, 248) 50%, rgba(0, 129, 235, 0.616) 50%); 
+}
+
+.footer h3{
+    border-bottom: 3px solid white;
+    text-align: center;
+}
+
+.footer p{
+    color: white;
+}
+
+
+
+
+
+
+
+/* media queries
+
+
+@media only screen and (max-width: 320px){
+    body{
+        background-color: green;
+    } 
+    .brand{
+        height: 8vh;
+    }
+    .text-left{
+       padding-left: 0px;
+       margin-top: -5%;
+    }
+    .logo img{
+        height: 5em;
+        width: 70em;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        background-color: red;
+    }
+    .brand{
+        height: 6vh;
+    }
+    .text-left{
+       padding-left: 0px;
+       margin-top: -5%;
+    }
+    .logo img{
+        height: 5em;
+        width: 70em;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        background-color: blue;
+    }
+    .brand{
+        height: 6vh;
+    }
+    .text-left{
+       padding-left: 0px;
+       margin-top: -5%;
+    }
+    .logo img{
+        height: 5em;
+        width: 70em;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 2560px){
+    body{
+        background-color: orangered;
+    }
+    .brand{
+        height: 10%;
+    }
+    .text-left{
+       padding-left: 0px;
+       margin-top: -20px;
+       
+    }
+    .logo img{
+        height: 5em;
+        width: 10em;
+        padding-bottom: 0px;
+    }
+} */
+
