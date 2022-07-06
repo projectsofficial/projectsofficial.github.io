@@ -24,7 +24,7 @@ h3{
 }
 
 .rock{
-position: fixed;    
+position: sticky;    
     top: 0;
                     z-index: 999;
                     width: 100%;
@@ -327,6 +327,7 @@ background: none;
   padding-left: 1em;
   height: 90%;
   padding-top:0em;
+   font-size: 0.3em;
     }
     
 }
