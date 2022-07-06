@@ -24,7 +24,7 @@ h3{
 }
 
 .rock{
-position: sticky;    
+position: fixed;    
     top: 0;
                     z-index: 999;
                     width: 100%;
@@ -142,7 +142,7 @@ transition: ease-in-out 0.6s;
 }
 
 .skills{
-    background: rgba(8, 137, 243, 0.84);
+    background: rgb(1, 103, 187);
 }
 .skills p{
     font-size: large;
@@ -198,6 +198,7 @@ h5{
     position:fixed;
 bottom: 0; 
 background: none;
+left:0;
 }
 
 .footer a{
@@ -324,7 +325,7 @@ background: none;
   padding-left: 1em;
   height: 90%;
   padding-top:0em;
-   font-size: 0.3em;
+   font-size: 0.6em;
     }
     
 }
