@@ -9,14 +9,19 @@
     --border:#2b303218;
 
 }
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+
+
 .primary-color{
     color: var(--primary-color);
 }
 .brand{
     padding: 0;
-    margin-bottom: 0;
-    min-height: 10vh;
+    margin-bottom:1.0rem;
     border-bottom: 2px solid;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .slid{
   color: black;
@@ -50,6 +55,9 @@
     color: lightblue;
 }
 
+.navbar-item a{
+    transition: ease-in-out 0.7s; 
+}
 
 a{
     color: white;
@@ -89,9 +97,10 @@ header .site-title{
 
 
 .logo img{
-    width: 3em;
+    width: 5.5em;
     padding: 0px;
     margin: 0px;
+    height: 80px;
     
 }
 
@@ -192,6 +201,8 @@ background-image:linear-gradient(220deg, lightgrey 50%, rgba(128, 128, 128, 0.61
 }
 
 .footer{
+    position:static;
+    bottom:0px;
     background-image:linear-gradient(220deg, rgb(0, 132, 248) 50%, rgba(0, 129, 235, 0.616) 50%); 
 }
 
@@ -208,81 +219,29 @@ background-image:linear-gradient(220deg, lightgrey 50%, rgba(128, 128, 128, 0.61
 
 
 
+.soon{
+    background-color:white;
+}
+
+/* media queries */
 
 
-/* media queries
 
-
-@media only screen and (max-width: 320px){
-    body{
-        background-color: green;
-    } 
-    .brand{
-        height: 8vh;
-    }
-    .text-left{
-       padding-left: 0px;
-       margin-top: -5%;
-    }
+@media only screen and (max-width: 600px){ 
     .logo img{
-        height: 5em;
-        width: 70em;
-        padding-bottom: 40px;
+        width: 5rem;
+        height: 50px;
     }
 }
 
-@media only screen and (max-width: 375px){
-    body{
-        background-color: red;
-    }
-    .brand{
-        height: 6vh;
-    }
-    .text-left{
-       padding-left: 0px;
-       margin-top: -5%;
-    }
+
+ @media only screen and (max-width: 320px){ 
     .logo img{
-        height: 5em;
-        width: 70em;
-        padding-bottom: 40px;
+        width: 3rem;
+        height: 30px;
     }
 }
 
-@media only screen and (max-width: 425px){
-    body{
-        background-color: blue;
-    }
-    .brand{
-        height: 6vh;
-    }
-    .text-left{
-       padding-left: 0px;
-       margin-top: -5%;
-    }
-    .logo img{
-        height: 5em;
-        width: 70em;
-        padding-bottom: 40px;
-    }
-}
+ 
 
-@media only screen and (max-width: 2560px){
-    body{
-        background-color: orangered;
-    }
-    .brand{
-        height: 10%;
-    }
-    .text-left{
-       padding-left: 0px;
-       margin-top: -20px;
-       
-    }
-    .logo img{
-        height: 5em;
-        width: 10em;
-        padding-bottom: 0px;
-    }
-} */
 
