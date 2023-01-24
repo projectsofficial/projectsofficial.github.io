@@ -122,7 +122,7 @@ button.submit{
     background-color: #fff;
 }
 .weeklyActivities .activities:hover{
-    background: rgba(0, , 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     transition: 400ms ease-out;
 }
