@@ -1,0 +1,352 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: rgb(229, 227, 227);
+}
+.head{
+background:rgb(0, 174, 255);
+position: fixed;
+z-index: 1;
+width: 100%;
+}
+.head b > a {
+    color: #fff;
+    text-decoration: none;
+}
+.btn{
+    display: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav-link{
+    color: white;
+    font-style: oblique;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 500ms ease-in-out
+}
+.nav-link:hover{
+    transition: 500ms ease-in-out
+}
+.current{
+    background-color: blue;
+   border-radius: 10% 10% 10% 50%;
+   transition: 500ms ease-in-out
+}
+.current:hover{
+    color: gold;
+     translate: 7px;
+    transition: 500ms ease-in-out;
+}
+form.search{
+position: absolute;
+right: 0;
+padding-top:5px;
+}
+input{
+    width:300px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: aliceblue;
+}
+button.submit{
+    position:absolute;
+    right: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 50px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: blue;
+    border-color: transparent;
+
+}
+.carousel-inner{
+    position: relative;
+    overflow: hidden;
+    height:40vh;
+    width: 100vw;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0; */
+    background-color: black;
+ }
+
+.carousel-item:first-child{
+    background: black  url('../images/IMG-20220105-WA0007.jpg') no-repeat;
+    background-size: cover;
+} 
+.carousel-item:nth-child(2){
+    background: yellow url('../images/IMG-20220105-WA0001.jpg') no-repeat;
+    background-size: cover;
+} 
+.carousel-item:nth-child(3){
+    background: blue url('../images/IMG-20220105-WA0002.jpg') no-repeat;
+    background-size: cover;
+}
+.carousel-item:nth-child(4){
+    background:red url('../images/IMG-20220105-WA0003.jpg') no-repeat;
+    background-size: cover;
+}
+.carousel-item:nth-child(5){
+    background:pink url('../images/IMG-20220105-WA0004.jpg') no-repeat;
+    background-size: cover;
+}
+.carousel-item:nth-child(6){
+    background:violet url('../images/IMG-20220105-WA0005.jpg') no-repeat;
+    background-size: cover;
+}
+.carousel-item:nth-child(7){
+    background:green url('../images/IMG-20220105-WA0006.jpg') no-repeat;
+    background-size: cover;
+}
+.carousel-caption{
+    position: absolute;
+    top: 110px;
+}
+.carousel-caption h5{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.weeklyActivities{
+    margin-top: 25px;  
+    background-color: #fff;
+}
+.weeklyActivities .activities:hover{
+    background: rgba(0, , 0, 0.5);
+    color: white;
+    transition: 400ms ease-out;
+}
+.card{
+    background-color: aqua;
+   margin:10px 10px 10px 50px;
+   width: 40%;
+}
+.activities{
+    background-color: red;
+    color: aliceblue;
+    font-style: oblique;
+    font-weight: 600;
+    transition: 400ms ease-out;
+}
+.Upcoming{
+    margin-top: 25px;  
+    background-color: #fff;
+}
+.district .card{
+    background-color: transparent;
+    border: none;
+}
+.district .card-body{
+    border-radius: 10%; 
+    width: 50%;
+    /* align-items: center; */
+    align-self: center;
+}
+
+.about{
+    background: url('../images/IMG-20220105-WA0002.jpg') no-repeat;
+    background-size: cover;
+     position:relative;
+     z-index:-0.5;
+    width:100vw;
+    display: block;
+    height:80vh; 
+    overflow:  hidden;
+    scroll-behavior: hidden;
+
+}
+.ab.footer{
+    bottom: -15px;
+}
+.about .container{
+    text-align: center;
+    color:white ;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  left: 20%;
+}
+.footer{
+    position:absolute;
+    bottom: -1050px;
+background-color: rgba(12, 12, 12,0.4);
+margin-top: 20px;
+height: 12em;
+overflow: hidden;
+width:100%;
+}
+.footer b > a{
+    color: black;
+}
+.footer h3{
+    color: rgba(0, 0, 0,0.8)
+}
+
+.footer a.current{
+    background-color: transparent;
+    border-radius: none;
+    transition: none;
+}
+.footer a.current:hover{
+    color: blue;
+     translate: 0px;
+    transition:none;
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: rgb(49, 49, 49);
+}
+.footer li{
+    list-style-type: none;
+}
+#social a i{
+padding-right:10px;
+}
+#loc iframe{
+    max-height:8.5em;
+}
+.district{
+    background-color: #fff;
+    margin-top: 25px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quaries */
+@media only screen and (max-width: 800px){
+    .head{
+        background-color: rgba(12, 12, 12,0.4);
+     min-height: 5vh;
+     position: relative;
+     z-index: 0;
+     width: 100vw;
+    
+    }
+    .collapse{
+       height: auto;
+    }
+    nav li:last-child{
+        display: none;
+    }
+    .dis{
+        display: none;
+    }
+    .logo{display: block;
+    position: absolute;
+    top: 5px;
+}
+.current{
+    max-width: 40%;
+    background-color: blue;
+   border-radius: 10% 10% 10% 40%;
+   transition: 400ms ease-in-out;
+   text-align:center;
+}
+.current:hover{
+    color: gold;
+     translate: 7px;
+    transition: 300ms ease-in-out;
+}
+.btn{
+    display: block;
+    position:relative;
+    right:-21em;
+    top:5px;
+    border: none;
+    outline: none;
+    }
+  form.search{
+        position: absolute;
+       left: 0;
+bottom:-25px;
+        }
+        input{
+            width:100%;
+            border-radius: 10px 10px 10px 10px;
+            border-color: aliceblue;
+
+        }
+        button.submit{
+            position:absolute;
+            right: 0px;
+            padding-left: 0px;
+            margin-left: 0px;
+            width: 50px;
+            border-radius: 10px 10px 10px 10px;
+            background-color: aqua;
+            border-color: transparent;
+        }  
+        .card{
+                background-color: aqua;
+               margin:10px 10px 10px 50px;
+               width: 80%;
+            
+        }
+.footer{
+    position:absolute;
+    bottom: -2150px;
+background-color: rgba(12, 12, 12,0.4);
+margin-top: 20px;
+height: 12em;
+overflow: hidden;
+width:100%;
+}
+.about .container{
+    text-align: center;
+    color:white ;
+  position: absolute;
+  top: 25%;
+  right: 0%;
+  left: 0%;
+}
+.about{
+    height: 75vh;
+}     
+}
