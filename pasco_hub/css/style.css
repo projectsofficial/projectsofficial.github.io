@@ -27,7 +27,7 @@ header::before{
     background: url("../images/brand.jpg") no-repeat;
     background-size: cover;
    animation: myAnimation  10s  linear infinite;
-   opacity: 0.1;
+   opacity: 0.4;
   
 }
 @keyframes myAnimation {
@@ -62,21 +62,7 @@ li.active a{
     font-family: fantasy;
     font-style: italic;
 }
-.intro{
-    position: relative;
-min-height: 100vh;
-        opacity: 0.3;  
-        overflow: hidden;
-        
-    }
-    /* .intro img {
-        position: absolute;
-        z-index: -1;
-        height: 100%;
-    width: 100%;
-    animation: big-width 3s ease-in-out infinite;
-    
-    } */
+   
     
     
      div.p{
@@ -217,5 +203,13 @@ footer{
         padding-top:30px;
        
     }
+    div.arr{
+        align-items: center;
+   text-align: center;
+       position: absolute;
+       top: 90%;
+   left: 45%;
+   font-size: 15px;
+   }
     
 }
