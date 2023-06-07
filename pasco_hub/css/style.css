@@ -129,6 +129,15 @@ input#Request{
     display:none;
     animation: ani 0.5s ease-in;
 }
+input#teli{
+    display:none;
+    animation: ani 0.5s ease-in;
+}
+
+input#Rteli{
+    display:none;
+    animation: ani 0.5s ease-in;
+}
 textarea#feedback{
     display:none;
     animation: ani 0.5s ease-in;
@@ -151,6 +160,15 @@ input#e-mail{
 }
 .courses h1{
     font-family: serif;
+   
+}
+input.jh{
+    position: fixed;
+    
+    z-index: 1; 
+}
+div.mm{
+    padding-top:60px;
 }
 input{
     border: transparent;

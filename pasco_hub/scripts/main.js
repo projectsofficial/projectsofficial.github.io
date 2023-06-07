@@ -14,7 +14,7 @@ resetAnimation:true,
   wow.init();
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    if(scroll < 900){
+    if(scroll < 750){
       $('.fixed-top').css('background', 'transparent')
     }
     else{
@@ -44,7 +44,7 @@ count.innerText = target;
 
 $(window).scroll(function(){
 var start = $(window).scrollTop();
-if (start > 900){
+if (start > 800){
 updateCount();
 }
 })
@@ -86,6 +86,8 @@ let RName = document.getElementById('RName');
 let Remail = document.getElementById('Re-mail');
 let Name = document.getElementById('Name');
 let E_mail = document.getElementById('e-mail');
+let Rteli = document.getElementById('Rteli');
+let teli = document.getElementById('teli');
 
 
 requestSec.addEventListener('click',revel)
@@ -96,12 +98,14 @@ RName.addEventListener('click',changeRName)
 E_mail.addEventListener('click',changeEmail)
 Remail.addEventListener('click',changeRemail)
 req.addEventListener('click',changeReq)
-
+teli.addEventlistener('click', changeTeli)
+Rteli.addEventlistener('click', changeRteli)
 function revel() {
 
         req.style.display = "block";
         Name.style.display = "block";
         E_mail.style.display = "block";
+        teli.style.display = "block";
    let changeRequestColor = document.getElementById('calo1').style.background ="orange";
     
 }
@@ -109,11 +113,13 @@ function revel2() {
     feed.style.display = "block";
     RName.style.display = "block";
     Remail.style.display = "block";
+    Rteli.style.display = "block";
     let changeRequestColor = document.getElementById('calo').style.background ="orangered";
 }
 function change(){
   feed.style.backgroundColor = "lightgrey"
 }
+
 function changeReq(){
   req.style.backgroundColor = "lightgrey"
 }
@@ -128,4 +134,10 @@ function changeRName(){
 }
 function changeRemail(){
   Remail.style.backgroundColor = "lightgrey"
+}
+function changeTeli(){
+  teli.style.backgroundColor = "lightgrey"
+}
+function changeRteli(){
+  Rteli.style.backgroundColor = "lightgrey"
 }
