@@ -14,7 +14,7 @@ resetAnimation:true,
   wow.init();
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    if(scroll < 750){
+    if(scroll < 560){
       $('.fixed-top').css('background', 'transparent')
     }
     else{
@@ -22,6 +22,36 @@ resetAnimation:true,
       
     }
   });
+  // $(window).scroll(function(){
+  //   var scroll = $(window).scrollTop();
+  //   if(scroll < 70){
+  //     $('#filterInput').css('background', 'white')
+  //     $('#filterInput').css('position', 'fixed');
+  //     $('#filterInput').css('z-index', '1');
+  //     $('#filterInput').css('top', '20vh')
+  //   }
+  //   else{
+  //     $('#filterInput').css('position', 'fixed');
+  //     $('#filterInput').css('z-index', '1');
+  //     $('#filterInput').css('top', '60px'),
+  //     $('#filterInput').css('right', '0px')
+      
+      
+  //   }
+  // });
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll < 560){
+      $('#to-top').css('display', 'none')
+    }
+    else{
+      $('#to-top').css('display','block');
+      $('#to-top').css('display','block');
+      $('#to-top').css('position', 'fixed');
+          $('#to-top').css('z-index', '1');
+          $('#to-top').css('top', '90vh')
+    }
+  })
   const counters = document.querySelectorAll('.counter');
 const speed = 600;
 counters.forEach(counter => {
@@ -44,7 +74,7 @@ count.innerText = target;
 
 $(window).scroll(function(){
 var start = $(window).scrollTop();
-if (start > 800){
+if (start > 600){
 updateCount();
 }
 })

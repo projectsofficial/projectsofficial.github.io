@@ -84,7 +84,7 @@ li.active a{
     
    #dash{
         background: #ff0e3d;
-        height:50vh;
+        height:60vh;
         box-shadow: 5px 10px 10px 5px black;
     }
 
@@ -162,10 +162,58 @@ input#e-mail{
     font-family: serif;
    
 }
-input.jh{
-    position: fixed;
+div.bt .bt2{
+   display: block;
+    margin-left: 50px;
+    /* top: ; */
     
-    z-index: 1; 
+}
+#to-top{
+    background-color: blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+#to-prev{
+    background-color: blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+#to-prev i{
+   position: absolute;
+   right: 18px;
+   top: 18px;
+   color: white;
+}
+#to-top i{
+   position: absolute;
+   right: 18px;
+   top: 18px;
+   color: white;
+}
+div#to-prev{
+    position: absolute;
+    right: 0px;
+}
+div#to-top{
+    position: absolute;
+    right: 0px;
+   
+}
+.course-footer{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    left: 0px;
+    padding-left: 0px
+}
+.dig-2{
+    position: fixed;
+    bottom: 0px;
+    width: 100%; 
+    left: 0px;
+    padding-left: 0px
 }
 div.mm{
     padding-top:60px;
@@ -197,7 +245,7 @@ footer{
 
 
 /* media - quaries */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 500px){
     ul.navbar-nav > li.nav-item{ position: relative;
         left:   10px;
         padding: 0px;
@@ -230,6 +278,22 @@ footer{
    font-size: 15px;
    }
    .card .dash-body{
-    font-size: 35px; 
-    font-weight: bolder;} 
+    font-size: 30px; 
+    font-weight: bolder;}
+    
+    div.bt .bt2{
+   
+        margin-left: -10px;
+        
+       
+    }
+    
+}
+@media only screen and (max-width: 360px){
+    div.bt .bt2{
+   
+        margin-left: -16px;
+        
+       
+    }
 }
