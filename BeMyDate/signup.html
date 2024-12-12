@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mdb.min.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link href="./css/signin.css" rel="stylesheet" />
+    <title>BeMyDate</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form action="signup.php" method="post">
+        <!-- <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+        <h1 class="h3 mb-3 fw-normal">Signup Page</h1>
+        <form action="signup.php" method="post">
+       
+        </label>
+          <label for="">First Name:</label>
+          <input
+            type="text"
+            class=""
+            id=""
+            name="fname"
+            placeholder="First name..."
+         required/>
+          <label for="">Last Name:</label>
+          <input
+            type="text"
+            class=""
+            id=""
+            name="lname"
+            placeholder="Last name"
+            required/><br />
+          <label for="">DOB:</label>
+          <input
+            type="date"
+            class=""
+            id=""
+            name="DOB"
+            placeholder="DOB"
+            required/><br />
+          <label for="">Age:</label>
+          <input
+            type="text"
+            class=""
+            id=""
+            name="Age"
+            placeholder="Age"
+            required /><br />
+          <label for="">Male</label>
+          <input type="radio" class="" name="gender" value="Male"  required/>
+          <label for="">Female</label>
+          <input type="radio" class="" name="gender"  value="Female" required/><br />
+          <label for="">Phone number</label>
+          <input
+            type="tel"
+            class=""
+            name="tele"
+            placeholder="Phone number"
+            required/><br />
+          <label for="">Email</label>
+          <input
+            type="email"
+            class=""
+            name="email"
+            placeholder="Email...."
+            required/><br />
+          <label for="">Password</label>
+          <input
+            type="password"
+            class=""
+            name="password"
+            placeholder="Password"
+            required /><br />
+          <label for="">Re-enter Password</label>
+          <input
+            type="password"
+            class=""
+            name="Rpassword"
+            placeholder="Password"
+            required /><br />
+          <label for="">Location </label>
+           <select name="loc" id="" required>
+            <option value="Ashanti"> Ashanti</option>
+            <option value="Sunyani"> Sunyani</option>
+
+
+           </select>
+          <button
+            class="w-100 btn btn-lg btn-primary"
+            type="submit"
+            name="Ssubmit"
+          >
+            SignUp
+          </button>
+          <div class="checkbox mb-3">
+            <p>Already have an account <a href="index.html">Login</a></p>
+          </div>
+        </form>
+        <p class="mt-5 mb-3 text-muted">&copy; 2024</p>
+      </form>
+    </main>
+
+    <script src="./scripts/jquery-slim.min.js"></script>
+    <script src="./scripts/popper.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/all.js"></script>
+    <script src="./scripts/mdb.min.js"></script>
+    <script src="./scripts/wow.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: "wow",
+        animateClass: "animated",
+        offset: 0,
+        mobile: true,
+        live: true,
+        callback: function (box) {},
+        scrollContainer: null,
+        resetAnimation: true,
+      });
+      wow.init();
+    </script>
+    <script>
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 900) {
+          $(".fixed-top").css("background", "transparent");
+        } else {
+          $(".fixed-top").css("background", "rgba(0, 0, 147, 0.7)");
+        }
+      });
+    </script>
+  </body>
+</html>

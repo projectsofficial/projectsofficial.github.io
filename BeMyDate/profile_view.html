@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/all.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/mdb.min.css">
+        <link rel="stylesheet" href="./css/animate.css">
+        <title>BeMyDate</title>
+      
+    </head>
+    <body>
+        <header role="head">
+          <nav class="navbar navbar-expand-lg  top-nav" aria-label="Tenth navbar example">
+            <div class="container-fluid col-sm-12 w-100">
+              <div class="col-sm-6 logo">BeMyDate</div>
+              <div class="col-sm-6" id="nav-icon">
+                <div class="icon">
+                  <span><i class="fa fa-share" ></i></span>     
+                  <span><i class="fa fa-bars"></i></span>
+                </div>
+               
+              </div>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg  top-nav " aria-label="Tenth navbar example">
+         
+            <div class="container-fluid col-sm-12 w-100">
+              
+        
+              <div class=" nav2">
+                <ul>
+                  <li><a href="./index.html" id="current">HOME </a></li>
+                  <li><a href="">SEARCH </a></li>
+                  <li><a href="">LIKES </a></li>
+                  <li><a href="">MATCH </a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+            </header>
+
+            <main role="main">
+<div class="container-fluid">
+  <h3>VIP FEE</h3>
+  <p>Service Charge +</p>
+</div>
+            </main>
+
+
+            <footer  role="footer">
+
+            </footer>
+           
+            <script src="./scripts/jquery-slim.min.js"></script>
+            <script src="./scripts/popper.min.js"></script>
+            <script src="./scripts/bootstrap.min.js"></script>
+            <script src="./scripts/all.js"></script>
+            <script src="./scripts/mdb.min.js"></script>
+            <script src="./scripts/wow.js"></script>
+            <script>
+              var wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset:         0,
+                mobile:true,
+                live:true,
+                callback: function(box){
+
+},
+scrollContainer:null,
+resetAnimation:true,
+              }
+              );
+              wow.init();
+            </script>
+            <script>
+              $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if(scroll < 900){
+                  $('.fixed-top').css('background', 'transparent')
+                }
+                else{
+                  $('.fixed-top').css('background', 'rgba(0, 0, 147, 0.7)');
+                }
+              })
+            </script>
+        </body>
+    </html>
